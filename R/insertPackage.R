@@ -131,9 +131,7 @@ insertPackage <- function(file,
         }
     }
     ## copy file into repo
-    if (!file.copy(file, pkgdir, overwrite = TRUE)) {
-        stop("File ", file, " can not be copied to ", pkgdir, call. = FALSE)
-    }
+    fs::file_copy(file, pkgdir, overwrite = TRUE)
 
     ## update index
     args <- .norm_tools_package_args(...)

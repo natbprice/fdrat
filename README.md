@@ -1,13 +1,14 @@
-## drat: Drat R Archive Template
+## fdrat: Fast Drat R Archive Template
 
-[![CI](https://github.com/eddelbuettel/drat/workflows/ci/badge.svg)](https://github.com/eddelbuettel/drat/actions?query=workflow%3Aci)
-[![License](https://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-2.0.html)
-[![CRAN](https://www.r-pkg.org/badges/version/drat)](https://cran.r-project.org/package=drat)
-[![Dependencies](https://tinyverse.netlify.com/badge/drat)](https://cran.r-project.org/package=drat)
-[![Downloads](https://cranlogs.r-pkg.org/badges/drat?color=brightgreen)](https://www.r-pkg.org/pkg/drat)
-[![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/drat)](https://github.com/eddelbuettel/drat)
-[![Documentation](https://img.shields.io/badge/documentation-is_here-blue)](https://eddelbuettel.github.io/drat/)
-[![Fork](https://img.shields.io/badge/fork-this_instead-orange)](https://github.com/drat-base/drat)
+*Purpose of fdrat Fork:*
+
+The R base `file.copy` function is very slow with (Windows?) network drives so I 
+replaced it with `fs::file_copy`. In my testing, transfer speeds were about 50X faster
+on a 200 MB file.
+
+This package will become obsolete if the performance
+of `file.copy` is improved in future R versions or a workaround is added in
+[drat](https://github.com/eddelbuettel/drat) ([Issue #127](https://github.com/eddelbuettel/drat/issues/127)).
 
 > **drat**
 >
