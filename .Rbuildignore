@@ -7,3 +7,5 @@ drat_.*\.tar\.gz$
 ^docs
 ^docs-src
 ^\.github
+^README\.Rmd$
+*.bin

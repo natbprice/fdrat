@@ -7,7 +7,7 @@ Author: Dirk Eddelbuettel with contributions by Carl Boettiger, Neal Fultz,
  Sebastian Gibb, Colin Gillespie, Jan Górecki, Matt Jones, Thomas Leeper,
  Steven Pav, Jan Schulz, Christoph Stepper, Felix G.M. Ernst, Patrick 
  Schratz, and Nathaniel Price. 
-Maintainer: Nathaniel Price
+Maintainer: Nathaniel Price <natbprice@gmail.com>
 Depends: R (>= 3.6.0)
 Imports: 
     fs,
@@ -16,9 +16,10 @@ Suggests: git2r, knitr, rmarkdown, minidown
 VignetteBuilder: knitr
 Description: Creation and use of R Repositories via helper functions 
  to insert packages into a repository, and to add repository information 
- to the current R session. Two primary types of repositories are support:
- gh-pages at GitHub, as well as local repositories on either the same machine
- or a local network. Drat is a recursive acronym: Drat R Archive Template. 
+ to the current R session. Three primary types of repositories are supported:
+ gh-pages at GitHub, local repositories on either the same machine
+ or a local network, cloud-based repositories. Drat is a recursive acronym: 
+ Drat R Archive Template. 
 License: GPL (>= 2)
 URL: https://github.com/natbprice/fdrat
 BugReports: https://github.com/natbprice/fdrat/issues
