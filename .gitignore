@@ -6,3 +6,4 @@ testpackages/
 docs-src/docs
 docs/mkdmt-src/docs
 *.bin
+*.zip
