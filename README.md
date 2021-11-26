@@ -21,7 +21,7 @@ typical CRAN package sizes.
 A simple solution is to replace base `file.copy` with `fs::file_copy`.
 Unfortunately, this proposed change was not accepted in the drat package
 repo ([Issue \#127](https://github.com/eddelbuettel/drat/issues/127),
-[Issue \#128](https://github.com/eddelbuettel/drat/issues/127)) so this
+[Issue \#128](https://github.com/eddelbuettel/drat/issues/128)) so this
 fork was created to address this issue.
 
 ## Benchmarks
@@ -43,9 +43,9 @@ microbenchmark::microbenchmark(
   control = list(order = "block")
 )
 #> Unit: seconds
-#>           expr        min        lq       mean     median        uq       max
-#>  fs::file_copy  0.6132894  0.617477  0.6745066  0.6194089  0.620811  1.148491
-#>      file.copy 14.6344611 14.704471 14.7420529 14.7320842 14.786816 14.877549
+#>           expr        min         lq       mean     median         uq       max
+#>  fs::file_copy  0.6418019  0.6487138  0.7283891  0.6717071  0.6943985  1.178104
+#>      file.copy 14.7753576 14.8779879 15.2338126 15.3240395 15.5202415 15.753201
 #>  neval
 #>     10
 #>     10
