@@ -8,4 +8,4 @@ drat_.*\.tar\.gz$
 ^docs-src
 ^\.github
 ^README\.Rmd$
-*.bin
+^.*\.bin$
